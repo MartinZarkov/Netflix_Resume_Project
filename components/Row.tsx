@@ -1,4 +1,4 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline"
+import { ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/24/outline"
 import { Movie } from "../typing"
 import Thumbnail from "./Thumbnail"
 import { useRef, useState } from "react"
@@ -12,11 +12,10 @@ interface Props {
 function Row({title, movies}: Props) {
 
   const rowRef = useRef<HTMLDivElement>(null)
-  const[isMoved, setIsMoved] = useState(false)
+  const[isMoved, setIsMoved] = useState(true)
 
   const handleClick = (direction: string) => {
-    setIsMoved(true)
-
+    
     if(rowRef.current){
         const {scrollLeft, clientWidth} = rowRef.current
         const scrollTo = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
