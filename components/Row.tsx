@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/24/outline"
-import { Movie } from "../typing"
+import { Movie } from "../typings"
 import Thumbnail from "./Thumbnail"
 import { useRef, useState } from "react"
 
