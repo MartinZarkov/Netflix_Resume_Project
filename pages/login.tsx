@@ -93,8 +93,7 @@ function Login() {
         <div className="text-[gray]">
           New to Netflix? {' '}
           <button type="submit" className="text-white hover:underline font-semibold" onClick={()=>setLogin(false)}>Sign up Now!</button>
-          <br>
-          Pressing "Sign up now!" will directly register your email and password.
+          {"\n"} Pressing "Sign up now!" will directly register your email and password.
         </div>
       </form>
     </div>
